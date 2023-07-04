@@ -75,16 +75,16 @@ footer{
   }
 
   main{
-    width: 960px;
+    width: 90%;
     display: flex;
     flex-flow: column;
     border-spacing: 30px;/*display tableの余白*/
-    margin: 0 auto;
   }
 
   .contents-box{
     width: 300px;
     background-color: #EEEEEE;
+    margin: 0 auto 20px;
   }
 
   .stepnum-box{
