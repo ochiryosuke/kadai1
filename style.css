@@ -14,43 +14,50 @@ header{
 main{
   width: 960px;
   display: table;
-  border-spacing: 30px;/*display tableの余白*/
-  margin: 0 auto;
+  border-spacing: 30px 0;/*display tableの余白*/
+  margin: 50px auto;
 }
 
 .contents-box{
     width: 300px;
+    border-collapse: separate;
+    border-spacing: 30px 0;/*display tableの余白*/
     background-color: #EEEEEE;
     display: table-cell;
 }
 
 .contents-box h3{
-    margin: 15px 0 5px 0;
+    padding-bottom: 5px;
 }
 
 .stepnum-box{
-    width: 45px;
+    width: 40px;
     background-color: #FF9A4B;
+    position: fixed;
+    height: inherit; /*親要素のcontens-boxに合わせる*/
 }
 
 .step-image1{
-    margin: 10px 10px 0 10px;
     background-size: cover;
     background-image: url(img/flow01.png);
+    margin: 10px 10px 15px 10px;
+    background-position: bottom;
     height: 150px;
 }
 
 .step-image2{
-    margin: 10px 10px 0 10px;
     background-size: cover;
     background-image: url(img/flow02.png);
+    background-position: bottom;
+    margin: 10px 10px 15px 10px;
     height: 150px;
 }
 
 .step-image3{
-    margin: 10px 10px 0 10px;
     background-size: cover;
     background-image: url(img/flow03.png);
+    background-position: bottom;
+    margin: 10px 10px 15px 10px;
     height: 150px;
 }
 
@@ -71,18 +78,19 @@ footer{
     width: 100%;
     background-color: #FF9A4B;
     height: 50px;
-    margin: 0 0 50px 0;
+    margin: 0 auto 50px auto;
   }
 
   main{
-    width: 90%;
-    display: flex;
-    flex-flow: column;
+    width: 100%;
+    margin: 0 auto;
     border-spacing: 30px;/*display tableの余白*/
   }
 
   .contents-box{
-    width: 300px;
+    display: flex;
+    flex-flow: column;
+    width: 90%;
     background-color: #EEEEEE;
     margin: 0 auto 20px;
   }
@@ -90,33 +98,28 @@ footer{
   .stepnum-box{
     width: 40px;
     background-color: #FF9A4B;
-  }
-
-  .contents-box{
-    width: 300px;
-    background-color: #EEEEEE;
-    margin-bottom: 20px;
+    align-self: flex-start;
   }
 
   .step-image1{
-    width: 90%;
+    background-size: cover;
+    background-position: center;
     height: 150px;
   }
 
   .step-image2{
-    width: 90%;
     background-size: cover;
+    background-position: center;
     height: 150px;
   }
 
   .step-image3{
-    width: 90%;
     background-size: cover;
+    background-position: center;
     height: 150px;
   }
 
   .step-text{
-    display: block;
     width: 40px;
     word-break: break-all;
     text-align: center;
